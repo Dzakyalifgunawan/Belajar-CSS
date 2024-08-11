@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* memilih semua element p yang memiliki atribut title yang memiliki value diakhiri dengan "belajar" */
+        p[title$="belajar"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p title="belajar pemrograman">ini tidak dipilih</p>
+    <!-- ini dipilih karena value di akhiri belajar juga -->
+    <p title="belajar">ini dipilih</p>
+    <p title="belajar-pemrograman">ini tidak dipilih</p>
+    <p title="pemrograman belajar">ini dipilih</p>
+</body>
+</html>

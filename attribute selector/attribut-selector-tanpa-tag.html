@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- saat menggunkan attribute selector nama tag sebenarnya tidak wajib, jadi kita bisa langsung menggunakan attribute selector -->
+     <!-- attribute selector juga bisa digunakan pada Class atau ID -->
+    <style>
+        [title*="belajar"] {
+            color: red;
+        }
+
+        .article[title*="belajar"] {
+            color: red;
+        }
+
+        #article[title*="belajar"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="article" title="belajar">ini dipilih</p>
+    <p>ini tidak dipilih</p>
+    <p title="belajar pemrograman">ini dipilih</p>
+    <p title="belajar">ini dipilih</p>
+    <p title="belajar-pemrograman">ini dipilih</p>
+    <p title="pemrograman belajar">ini dipilih</p>
+    <p>ini tidak dipilih</p>
+    <p id="article" title="belajar">ini dipilih</p>
+</body>
+</html>

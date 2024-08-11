@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* memilih semua element p yang memiliki atribut title dengan value "belajar" atau "belajar" yang diikuti dengan karakter strip "-" */
+        p[title|="belajar"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p title="belajar pemrograman">ini tidak dipilih</p>
+    <p title="belajar">ini dipilih</p>
+    <p title="belajar-pemrograman">ini dipilih</p>
+</body>
+</html>

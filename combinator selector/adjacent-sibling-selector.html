@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element saudara yang diletakkan setelah element parent */
+        /* element p yang diletakkan setelah element div */
+        div + p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <articel>
+            <p>ini tidak dipilih</p>
+        </articel>
+        <p>ini tidak dipilih</p>
+    </div>
+    <p>ini dipilih</p>
+    <!-- ini tidak dipilih karena hanya satu elemen div setelahnya -->
+    <p>ini tidak dipilih</p>
+</body>
+</html>

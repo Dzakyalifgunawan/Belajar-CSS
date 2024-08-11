@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* memilih seluruh element saudara dari saudara element parent */
+        /* memilih seluruh element p dari saudara element div */
+        div ~ p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- ini tidak dipilih karena elemen p ini sebelum div -->
+    <p>ini tidak dipilih</p>
+    <div>
+        <articel>
+            <p>ini tidak dipilih</p>
+        </articel>
+        <p>ini tidak dipilih</p>
+    </div>
+    <p>ini dipilih</p>
+    <p>ini dipilih</p>
+</body>
+</html>

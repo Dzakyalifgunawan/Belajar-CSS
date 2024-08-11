@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* memilih semua element p yang memiliki atribut title terdapat kata belajar */
+        p[title~="belajar"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p title="belajar pemrograman">ini dipilih</p>
+    <!-- ini tidak dipilih karena kata belajar nya bersambung dengan pemrograman -->
+    <p title="belajarpemrograman">ini tidak dipilih</p>
+</body>
+</html>
